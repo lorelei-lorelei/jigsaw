@@ -12,7 +12,7 @@ $year = 1986;
 $bigwolf = 37;
 
 //This is an include statement
-include '../gittrial/puzzle_piece_autumn.php';
+/*include '../gittrial/puzzle_piece_autumn.php';*/
 
 //This is an example of how to set the timezone (inc a builtin function).
 date_default_timezone_set('UTC');
@@ -55,11 +55,11 @@ foreach ($mythical as $Tolkein){
 ?>
   <table>
     <th>Beasties</th>
-    <? foreach ($mythical as $Tolkein){ ?>
-      <tr><td><?= $Tolkein ?></td></tr>
-    <? } ?>
+    <?php foreach ($mythical as $Tolkein){ ?>
+      <tr><td><?php echo $Tolkein ?></td></tr>
+    <?php } ?>
   </table>
-<?
+<?php
 
 //This is correct, but very noisy and overcomplicated.
 echo "I like " . $mythical[0] . " and " . $mythical[3] . ".", '<br />';
